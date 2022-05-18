@@ -2,14 +2,13 @@ import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.less'
 import test from './test'
+import Taro from "@tarojs/taro";
+
+console.log('-----: ', Taro.setStorage)
 
 import AuthingMove from './bundle'
 
-console.log('AuthingMove: ', AuthingMove)
-
-AuthingMove.setStorageSync('abc', 'abcd')
-
-
+console.log('AuthingMove: ', AuthingMove.setStorage)
 
 const util = require('../../utils/index')
 console.log('test: ', test())
